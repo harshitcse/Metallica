@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TradeDetails from './tradeDetails';
+
 
 
 
@@ -47,9 +47,10 @@ export default class TradeList extends Component{
                 <td><button>Delete</button></td>
             </tr>
         },this);
-        
+        var tableStyle ={width:'100%',        
+        };
         return (<div className="tradelist">
-                    <table>
+                    <table style={tableStyle}>
                     <thead>
                     
                     <tr>

@@ -27,6 +27,7 @@ class App extends Component {
     selectedRow:0
   }
   this.childCalled=this.childCalled.bind(this);
+  this.callback=this.callback.bind(this);
   }
 
   componentWillMount() {
@@ -59,6 +60,10 @@ class App extends Component {
   childCalled(rowN){
       this.setState({selectedRow:rowN})
   }
+  callback(obj){
+      console.log('got '+obj.price);
+      
+  }
     
 
   render() {
@@ -66,7 +71,7 @@ class App extends Component {
       var comList = ['AL','CU','CO','ZN'];
       let detail = null;
     if (rows.length>0) {
-      detail = <TradeDetails trade={rows[this.state.selectedRow]}/>;
+      detail = <TradeDetails callback={this.callback}trade={rows[this.state.selectedRow]}/>;
     }
     return (
       <div className="App">
