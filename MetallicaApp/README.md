@@ -1,6 +1,5 @@
-# create-react-app React Project with Node Express Backend
+# React Project with Node Express Backend
 
-> Example on using create-react-app with a Node Express Backend
 
 ## Usage
 
@@ -34,4 +33,4 @@ The key to use an Express backend with a project created with `create-react-app`
 
 This tells Webpack development server to proxy our API requests to our API server, given that our Express server is running on **localhost:5000**
 
--Esau
+-Harshit
